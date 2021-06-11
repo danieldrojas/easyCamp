@@ -7,6 +7,8 @@ function initMap() {
   });
 }
 
+window.initMap;
+
 const script = document.createElement("script");
 script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyAidpXcu5bIMLxK1NGJr5MyCtN2tThm2as&libraries=geometry,places,localContext&callback=initMap`;
 script.async = true;
