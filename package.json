@@ -19,5 +19,8 @@
   "homepage": "https://github.com/danieldrojas/easyCamp#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "cors": "^2.8.5"
   }
 }

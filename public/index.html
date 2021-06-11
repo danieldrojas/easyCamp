@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
-    <script defer src="./map.js"></script>
+    <script
+        src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script defer src="./index.js"></script>
     <title>EasyCamp</title>
 </head>
 
@@ -17,17 +19,18 @@
             <div class="panel">
                 <form>
                     <label for="origin">Origin: </label>
-                    <input id="origin" name="tripParameters">
+                    <input id="origin" name="origin">
                     <label for="destination">Destination: </label>
-                    <input id="destination" name="tripParameters">
-                    <label for="milesDay">Distance driving per day?:</label>
-                    <input id="milesDay" name="tripParameters"
+                    <input id="destination" name="destination">
+                    <label for="milesPerDay">Distance driving per day?:</label>
+                    <input id="milesPerDay" name="milesPerDay"
                         placeholder="miles per day">
                     <!-- <label>Miles before gas stop?</label>
                         <input id="milesGasStop" name="tripParameters"
                             placeholder="miles"> -->
 
-                    <input type="submit" id="searchBtn" name="map">
+                    <input type="submit" id="formSubmitBtn"
+                        name="formSubmitBtn">
                 </form>
             </div>
 
