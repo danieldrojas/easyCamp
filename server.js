@@ -1,11 +1,10 @@
 const express = require("express");
-const cors = require("cors");
 
 const port = process.env.PORT || 3000;
 const app = express();
 
-app.use(cors());
 app.set("view engine", "ejs");
+app.use(express.static(__dirname + "/public"));
 
 const indexRoutes = require("./routes/index");
 
