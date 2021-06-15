@@ -19,7 +19,7 @@
                                     href="#">Map</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Search</a>
+                                <a class="nav-link" href="#">Detail Search</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link disabled" href="#"
@@ -33,18 +33,21 @@
                         <p class="card-text">With supporting text below as a
                             natural lead-in to
                             additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="input-group m-2">
+                            <input id="originGeneral" type="text"
+                                class="form-control"
+                                placeholder="From ex: Dallas, TX">
+                            <input id="destinationGeneral" type="text"
+                                class="form-control"
+                                placeholder="To ex: Yellowstone, MN">
+                            <button class="btn btn-outline-secondary"
+                                type="button">Find</button>
+                        </div>
                         <div id="map">Map goes here</div>
-
                     </div>
                 </div>
-
             </div>
-
-
         </div>
-
-
     </div>
 
     <script>
@@ -54,14 +57,11 @@
                 center: { lat: 35.2784, lng: -93.1338 },
                 zoom: 5,
             });
-        }
-
+        };
 
     </script>
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAidpXcu5bIMLxK1NGJr5MyCtN2tThm2as&callback=initMap&libraries=&v=weekly"
         async>
         </script>
-
-
     <%- include("./partials/footer") %>
